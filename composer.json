@@ -10,6 +10,14 @@
         }
     ],
     "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/tomk79/px2-auth.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/hk-r/lib-plum.git"
+        }
     ],
     "require": {
         "php": ">=5.4.0" ,
@@ -21,7 +29,9 @@
         "pickles2/px2-path-resolver": "^2.0",
         "pickles2/px2-px2dthelper": "^2.0",
         "pickles2/px2-remove-attr": "^2.0",
-        "pickles2/px2-sitemapexcel": "^2.0"
+        "pickles2/px2-sitemapexcel": "^2.0",
+        "tomk79/px2-auth": "dev-develop",
+        "hk-r/lib-plum": "dev-develop"
     },
     "require-dev": {
     },

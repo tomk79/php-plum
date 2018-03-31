@@ -215,6 +215,14 @@ return call_user_func( function(){
 
 		// PX=px2dthelper
 		'tomk79\pickles2\px2dthelper\main::register' ,
+
+		// px2-auth
+		'tomk79\pickles2\auth\main::auth('.json_encode(array(
+			'db' => array(
+				'dbms' => 'csv',
+				'path' => './px-files/auth/user_list.csv',
+			),
+		)).')',
 	);
 
 
@@ -230,6 +238,13 @@ return call_user_func( function(){
 	$conf->funcs->processor = new stdClass;
 
 	$conf->funcs->processor->html = array(
+		// px2-auth : filter
+		'tomk79\pickles2\auth\main::filter('.json_encode(array(
+			'auth_level_request' => array(
+				'/plum/*' => 1,
+			),
+		)).')',
+
 		// ページ内目次を自動生成する
 		'picklesFramework2\processors\autoindex\autoindex::exec' ,
 
