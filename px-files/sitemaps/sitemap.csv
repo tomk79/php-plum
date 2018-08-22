@@ -1,4 +1,5 @@
 "* path","* content","* id","* title","* title_breadcrumb","* title_h1","* title_label","* title_full","* logical_path","* list_flg","* layout","* orderby","* keywords","* description","* category_top_flg","* role","* proc_type","* **delete_flg"
 "/index.html",,,"ホーム",,,,,,"1","top",,,,,,,
 "/plum/index.html",,,"ステージング管理",,,,,,"1",,,,,"1",,,
+"/indigo/index.html",,,"公開予約",,,,,,"1",,,,,"1",,,
 "/logout.html",,,"ログアウト",,,,,,"1",,,,,,,,
