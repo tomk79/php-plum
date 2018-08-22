@@ -36,19 +36,19 @@ $parameter = array(
 	'_GET' => $_GET,
 
 	// indigo作業用ディレクトリ（絶対パス）
-	'realpath_workdir' => '/var/www/html/sample-lib-indigo/[directoryName(ex. indigo_dir)]/',
+	'realpath_workdir' => __DIR__.'/../px-files/_sys/ram/data/indigo/',
 
 	// リソースディレクトリ（ドキュメントルートからの相対パス）
-	'relativepath_resourcedir'	=> './../[directoryName(ex. res)]/',
+	'relativepath_resourcedir'	=> './index_files/indigo/',
 
 	// ajax呼出クラス（ドキュメントルートからの相対パス）
-	'realpath_ajax_call' => './ajax.php',
+	'realpath_ajax_call' => './index_files/php/ajax.php',
 	
 	// 画面表示上のタイムゾーン
 	'time_zone' => 'Asia/Tokyo',
 
 	// ユーザID
-	'user_id' => 'user01',
+	'user_id' => 'admin',
 
 	// DB設定
 	'db' => array(
@@ -73,16 +73,10 @@ $parameter = array(
 	'server' => array(
 			array(
 					// 任意の名前
-					'name' => 'server1',
+					'name' => 'www1',
 					// 同期先絶対パス
-					'real_path' => '/var/www/html/indigo-test-project/'
+					'real_path' => __DIR__.'/../px-files/sites/honbanProject/'
 			),
-			array(
-					// 任意の名前
-					'name' => 'server2',
-					// 同期先絶対パス
-					'real_path' => '/var/www/html/indigo-test-project2/'
-			)
 	),
 
 	// 同期除外ディレクトリ、またはファイル
@@ -95,15 +89,15 @@ $parameter = array(
 	'git' => array(
 
 		// Gitリポジトリのurl（現在はhttpsプロトコルのみ対応）
-		'giturl' => 'https://github.com/gk-r/indigo-test-project.git',
+		'giturl' => 'https://github.com/pickles2/lib-plum.git',
 
 		// ユーザ名
 		// Gitリポジトリのユーザ名を設定
-		'username' => 'hoge',
+		'username' => null,
 
 		// パスワード
 		// Gitリポジトリのパスワードを設定
-		'password' => 'fuga'
+		'password' => null
 	)
 );
 
